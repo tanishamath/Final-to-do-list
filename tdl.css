@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(5, 5, 132),purple,pink);
+}
+
+.container {
+    background:#efd9f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+}
+
+
+.section-form,
+.task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.section-form input,
+.task-form input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+button {
+   
+    padding: 10px;
+    border: none;
+    background-color: #8230b8;
+    color: rgb(251, 251, 251);
+    border-radius: 30px;
+    cursor: pointer;
+    outline:none;
+    
+    
+}
+button:hover {
+    background-color: #ed94c3;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #faf2f2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.section:hover {
+    background-color: #f0abbb;
+    transform: scale(1.02);
+}
+
+.section.active {
+    background-color: #c0c0c0;
+}
+
+.tasks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #e2e2e2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
